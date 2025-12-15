@@ -1,6 +1,6 @@
-# Define two numbers
-a = 10
-b = 20
+import os
 
-# Calculate and print the sum
+a = int(os.getenv("NUMBER1", 10))
+b = int(os.getenv("NUMBER2", 20))
+
 print("Sum of the two numbers:", a + b)
